@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponKing.App", "CouponKing.App\CouponKing.App.csproj", "{64796E6A-661F-4B25-8DA5-ED4329FDD84A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponKing.Servicios", "CouponKing.Servicios\CouponKing.Servicios.csproj", "{C0002A54-8FEB-478C-BA9F-312C734C6BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponKing.Logica", "CouponKing.Logica\CouponKing.Logica.csproj", "{08AC2DB6-4908-466D-BF0E-EF0AF50002BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponKing.Datos", "CouponKing.Datos\CouponKing.Datos.csproj", "{719AD504-006F-4CF5-B5CF-77A9E70A58C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponKing.Entidades", "CouponKing.Entidades\CouponKing.Entidades.csproj", "{ED1448DF-5AEE-4AF8-9A8B-92D6840A809C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64796E6A-661F-4B25-8DA5-ED4329FDD84A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64796E6A-661F-4B25-8DA5-ED4329FDD84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64796E6A-661F-4B25-8DA5-ED4329FDD84A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{64796E6A-661F-4B25-8DA5-ED4329FDD84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64796E6A-661F-4B25-8DA5-ED4329FDD84A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64796E6A-661F-4B25-8DA5-ED4329FDD84A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C0002A54-8FEB-478C-BA9F-312C734C6BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0002A54-8FEB-478C-BA9F-312C734C6BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0002A54-8FEB-478C-BA9F-312C734C6BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0002A54-8FEB-478C-BA9F-312C734C6BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08AC2DB6-4908-466D-BF0E-EF0AF50002BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08AC2DB6-4908-466D-BF0E-EF0AF50002BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08AC2DB6-4908-466D-BF0E-EF0AF50002BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08AC2DB6-4908-466D-BF0E-EF0AF50002BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719AD504-006F-4CF5-B5CF-77A9E70A58C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719AD504-006F-4CF5-B5CF-77A9E70A58C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719AD504-006F-4CF5-B5CF-77A9E70A58C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719AD504-006F-4CF5-B5CF-77A9E70A58C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED1448DF-5AEE-4AF8-9A8B-92D6840A809C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1448DF-5AEE-4AF8-9A8B-92D6840A809C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1448DF-5AEE-4AF8-9A8B-92D6840A809C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1448DF-5AEE-4AF8-9A8B-92D6840A809C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
