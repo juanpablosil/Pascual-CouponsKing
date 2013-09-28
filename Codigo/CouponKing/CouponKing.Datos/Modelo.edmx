@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl" Namespace="Modelo.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
+        <EntityContainer Name="ModeloTargetContainer" >
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Modelo" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="ModeloContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cupones" EntityType="Modelo.Cupon" />
+          <EntitySet Name="Usuario" EntityType="Modelo.Usuario" />
+          <EntitySet Name="TipoUsuario" EntityType="Modelo.TipoUsuario" />
+          <AssociationSet Name="UsuarioCupon" Association="Modelo.UsuarioCupon">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Cupon" EntitySet="Cupones" />
+          </AssociationSet>
+          <AssociationSet Name="TipoUsuarioUsuario" Association="Modelo.TipoUsuarioUsuario">
+            <End Role="TipoUsuario" EntitySet="TipoUsuario" />
+            <End Role="Usuario" EntitySet="Usuario" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Cupon" >
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Type="Int32" Name="Codigo" Nullable="false" />
+          <Property Type="String" Name="Nombre_Cupon" Nullable="false" />
+          <Property Type="String" Name="Tipo_Cupon" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuario" >
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Type="Int32" Name="Codigo" Nullable="false" />
+          <Property Type="Int32" Name="Cedula" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" />
+          <Property Type="String" Name="Correo" Nullable="false" />
+          <NavigationProperty Name="Cupones" Relationship="Modelo.UsuarioCupon" FromRole="Usuario" ToRole="Cupon" />
+          <NavigationProperty Name="TipoUsuario" Relationship="Modelo.TipoUsuarioUsuario" FromRole="Usuario" ToRole="TipoUsuario" />
+        </EntityType>
+        <EntityType Name="TipoUsuario">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Type="Int32" Name="Codigo" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Descripcion" Nullable="false" />
+        </EntityType>
+        <Association Name="UsuarioCupon">
+          <End Type="Modelo.Usuario" Role="Usuario" Multiplicity="1" />
+          <End Type="Modelo.Cupon" Role="Cupon" Multiplicity="*" />
+        </Association>
+        <Association Name="TipoUsuarioUsuario">
+          <End Type="Modelo.TipoUsuario" Role="TipoUsuario" Multiplicity="1" />
+          <End Type="Modelo.Usuario" Role="Usuario" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="Modelo" />
+        <Alias Key="Target" Value="Modelo.Store" />
+        <EntityContainerMapping CdmEntityContainer="ModeloContainer" StorageEntityContainer="ModeloTargetContainer">
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="Modelo" >
+        <EntityTypeShape EntityType="Modelo.Cupon" Width="1.5" PointX="1.875" PointY="1.125" Height="1.61568359375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelo.Usuario" Width="1.5" PointX="4.5" PointY="1.125" Height="1.787985026041667" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelo.TipoUsuario" Width="1.5" PointX="6.875" PointY="1.25" Height="1.4033821614583331" />
+        <AssociationConnector Association="Modelo.UsuarioCupon">
+          <ConnectorPoint PointX="4.5" PointY="1.932841796875" />
+          <ConnectorPoint PointX="3.375" PointY="1.932841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="Modelo.TipoUsuarioUsuario">
+          <ConnectorPoint PointX="6.875" PointY="1.9516910807291665" />
+          <ConnectorPoint PointX="6" PointY="1.9516910807291665" />
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

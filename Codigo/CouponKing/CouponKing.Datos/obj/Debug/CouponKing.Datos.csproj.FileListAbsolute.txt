@@ -1,0 +1,8 @@
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.Datos\bin\Debug\CouponKing.Datos.dll.config
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.Datos\bin\Debug\CouponKing.Datos.dll
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.Datos\bin\Debug\CouponKing.Datos.pdb
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.Datos\bin\Debug\CouponKing.Entidades.dll
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.Datos\bin\Debug\CouponKing.Entidades.pdb
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.Datos\obj\Debug\ResolveAssemblyReference.cache
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.Datos\obj\Debug\CouponKing.Datos.dll
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.Datos\obj\Debug\CouponKing.Datos.pdb

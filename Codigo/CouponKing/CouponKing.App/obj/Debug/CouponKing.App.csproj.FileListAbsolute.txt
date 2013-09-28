@@ -1,0 +1,13 @@
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\Bin\Debug\ApplicationIcon.png
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\Bin\Debug\Background.png
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\Bin\Debug\CouponKing.App.dll
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\Bin\Debug\CouponKing.App.pdb
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\Bin\Debug\AppManifest.xaml
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\Bin\Debug\CouponKing.App.xap
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\obj\Debug\ResolveAssemblyReference.cache
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\obj\Debug\App.g.i.cs
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\obj\Debug\MainPage.g.i.cs
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\obj\Debug\CouponKing.App.g.resources
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\obj\Debug\CouponKing.App.dll
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\obj\Debug\CouponKing.App.pdb
+D:\Usuario\Documents\GitHub\Pascual-CouponsKing\Codigo\CouponKing\CouponKing.App\obj\Debug\XapCacheFile.xml

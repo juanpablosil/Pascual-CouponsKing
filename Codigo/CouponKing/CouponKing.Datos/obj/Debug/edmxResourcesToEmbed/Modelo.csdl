@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Modelo" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="ModeloContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cupones" EntityType="Modelo.Cupon" />
+    <EntitySet Name="Usuario" EntityType="Modelo.Usuario" />
+    <EntitySet Name="TipoUsuario" EntityType="Modelo.TipoUsuario" />
+    <AssociationSet Name="UsuarioCupon" Association="Modelo.UsuarioCupon">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Cupon" EntitySet="Cupones" />
+    </AssociationSet>
+    <AssociationSet Name="TipoUsuarioUsuario" Association="Modelo.TipoUsuarioUsuario">
+      <End Role="TipoUsuario" EntitySet="TipoUsuario" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cupon">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Type="Int32" Name="Codigo" Nullable="false" />
+    <Property Type="String" Name="Nombre_Cupon" Nullable="false" />
+    <Property Type="String" Name="Tipo_Cupon" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Type="Int32" Name="Codigo" Nullable="false" />
+    <Property Type="Int32" Name="Cedula" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" />
+    <Property Type="String" Name="Correo" Nullable="false" />
+    <NavigationProperty Name="Cupones" Relationship="Modelo.UsuarioCupon" FromRole="Usuario" ToRole="Cupon" />
+    <NavigationProperty Name="TipoUsuario" Relationship="Modelo.TipoUsuarioUsuario" FromRole="Usuario" ToRole="TipoUsuario" />
+  </EntityType>
+  <EntityType Name="TipoUsuario">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Type="Int32" Name="Codigo" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Descripcion" Nullable="false" />
+  </EntityType>
+  <Association Name="UsuarioCupon">
+    <End Type="Modelo.Usuario" Role="Usuario" Multiplicity="1" />
+    <End Type="Modelo.Cupon" Role="Cupon" Multiplicity="*" />
+  </Association>
+  <Association Name="TipoUsuarioUsuario">
+    <End Type="Modelo.TipoUsuario" Role="TipoUsuario" Multiplicity="1" />
+    <End Type="Modelo.Usuario" Role="Usuario" Multiplicity="*" />
+  </Association>
+</Schema>
